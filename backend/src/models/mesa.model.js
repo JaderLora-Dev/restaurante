@@ -77,7 +77,7 @@ export const liberarMesaPedido = async (conn, idPedido) => {
     UPDATE mesas m
     INNER JOIN pedido p
        ON p.idMesas = m.idMesas
-     SET m.estado = "Disponible" 
+     SET m.estado = 'Disponible' 
      WHERE p.idPedidos = ?
      `,
     [idPedido],

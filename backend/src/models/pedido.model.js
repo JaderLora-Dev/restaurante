@@ -145,7 +145,7 @@ export const finalizarPedido = async (conn, idPedido) => {
   const [result] = await conn.query(
     `
     UPDATE pedido
-    SET estado = "Finalizado"
+    SET estado = 'Finalizado'
     WHERE idPedidos = ?
       AND estado = 'Activo'`,
     [idPedido],
