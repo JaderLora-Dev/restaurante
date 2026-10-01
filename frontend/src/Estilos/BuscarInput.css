@@ -1,0 +1,96 @@
+@media (max-width: 768px) {
+    
+.container-input {
+    position: relative;
+}
+
+.buscar-input {
+    padding: 11px  30px;
+    border-radius: 5px;
+    width: 100%; 
+    border: 1px  solid #ccc;
+    outline: none;
+    background: #f3f3f3;
+}
+
+.icono-buscar {
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    color: #ccc;
+    transition: borde-color 0.3s ease;
+}
+
+.buscar-input:hover {
+    border: 1px solid black;
+
+}
+.buscar-input:not(:placeholder-shown) {
+    border: 1px solid black;
+} 
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+ 
+   .container-input {
+        position: relative;
+       
+}
+
+.buscar-input {
+   padding: 11px  30px;
+    border-radius: 5px;
+    width: 100%; 
+    border: 1px  solid #ccc;
+    outline: none;
+    background: #f3f3f3;
+}
+
+.icono-buscar {
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    color: #ccc;
+    transition: borde-color 0.3s ease;
+}
+
+.buscar-input:hover {
+    border: 1px solid black;
+
+}
+.buscar-input:not(:placeholder-shown) {
+    border: 1px solid black;
+}    
+}
+
+@media (min-width: 1023px) {
+   
+.container-input {
+        position: relative;
+}
+
+.buscar-input {
+   padding: 11px  30px;
+    border-radius: 5px;
+    width: 300px; 
+    border: 1px  solid #ccc;
+    outline: none;
+    background: #f3f3f3;
+}
+
+.icono-buscar {
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    bottom: 0;
+    color: #ccc;
+    transition: borde-color 0.3s ease;
+}
+
+.buscar-input:hover {
+    border: 1px solid black;
+
+}
+.buscar-input:not(:placeholder-shown) {
+    border: 1px solid black;
+}    
+}

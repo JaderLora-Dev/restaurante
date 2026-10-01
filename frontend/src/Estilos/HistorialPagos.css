@@ -1,0 +1,460 @@
+@media (max-width: 768px) {
+
+.header-historial-pagos {
+     width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 33, 73, 0.973);
+    color: white;
+    height: 80px;
+    z-index: 100;
+    margin-bottom: 5px;
+    box-shadow:  7px  4px 12px  rgba(0,0,0,.2);
+}
+
+.container-historial-pc {
+    display: none;
+}
+.historial-encabezado-pagos {
+    display: none;
+}
+
+.container-filtro-historial-pagos {
+     width: 99%;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 10px;
+    border: 1px solid #ccc;
+    margin: auto;
+    background: white;
+}
+
+.container-filtro-historial-pagos h2 {
+   display: none;
+}
+.filtros-historial-Pagos {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.filtros-historial-Pagos select {
+     width: 100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    color: #5a6268;
+    box-sizing: border-box;
+}
+
+.container-fecha-pagos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    color: #5a6268;
+    box-sizing: border-box;
+    
+}
+
+.container-fecha-pagos label {
+    margin: auto 10px;
+}
+
+.container-fecha-pagos input {
+    box-sizing: border-box;
+    padding: 8px;
+    color: #5a6268;
+    border: none;
+    background: #f3f3f3;
+    font-size: 16px;
+
+}
+
+.filtros-historial-Pagos div:nth-child(2) {
+    text-align: right;
+}
+
+.filtros-historial-Pagos button {
+ padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.filtros-historial-Pagos button:hover{
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.filtros-historial-Pagos button:active{
+    transform: scale(.98);
+}
+
+
+
+.container-historial-pagos {
+   display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 99%;
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.container-historial-movil {
+   display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.pagosH-filas-1 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px 1fr 1fr;
+}
+
+.pagosH-filas-1 span:nth-child(1){
+    font-weight: bold;
+    font-size: 17px;
+    background: #cccccc9d;
+    margin-right: auto;
+    color: black;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.pagosH-filas-1 span:nth-child(2){
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.pagosH-filas-1 span:nth-child(3){
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    margin-left: auto;
+    font-size: 17px;
+}
+
+.metodo-Efectivo {
+    color: #22c55e;
+    background-color: #22c55e38;
+}
+
+.metodo-Nequi {
+    color: rgba(0, 0, 255, 0.566);
+    background-color: rgba(0, 0, 255, 0.17);
+}
+
+.metodo-Tarjeta {
+    color: #ff9800;
+    background-color:  #ff99003d;
+}
+
+.metodo-Transferencia {
+    color: #2274c5;
+    background-color: #2274c54f;
+}
+/*estilos de la fila 2*/
+.pagosH-filas-2,
+.pagosH-filas-3 {
+    display: flex;
+    gap: 8px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.703);
+}
+
+.pagosH-boton {
+    color: rgb(87, 3, 255);
+    border: 1px solid rgb(87, 3, 255);
+    width: 100%;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 10px;
+    background: white;
+    cursor: pointer;
+
+
+}
+
+.pagosH-boton:hover {
+    background-color: rgb(87, 3, 255);
+    color: white;
+
+}
+
+.historial-selec-paginacion {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.historial-limit {
+     position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+}
+@media (min-width: 769px) {
+
+.header-historial-pagos {
+   display: none;
+}
+/*estilos de los filtros*/
+
+.container-filtro-historial-pagos {
+     width: 99%;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 10px;
+    border: 1px solid #ccc;
+    margin: auto;
+    background: white;
+}
+
+.container-filtro-historial-pagos h2 {
+    margin: auto;
+    padding: 15px 5px;
+    box-sizing: border-box;
+
+}
+.filtros-historial-Pagos {
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    gap: 10px;
+}
+
+.filtros-historial-Pagos select {
+     width: 100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    color: #5a6268;
+    box-sizing: border-box;
+}
+
+/*estilos de los filtros fechas*/
+.container-fecha-pagos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    color: #5a6268;
+    box-sizing: border-box;
+    
+}
+
+.container-fecha-pagos label {
+    margin: auto 5px;
+}
+
+/*estilos de los filtros input*/
+.container-fecha-pagos input {
+    box-sizing: border-box;
+    padding: 8px;
+    color: #5a6268;
+    border: none;
+    background: #f3f3f3;
+    font-size: 16px;
+}
+
+/*estilos del boton limpiar*/
+.filtros-historial-Pagos div:nth-child(2) {
+    order: 4;
+    text-align: right;
+}
+
+.filtros-historial-Pagos button {
+    padding: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.filtros-historial-Pagos button:hover{
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.filtros-historial-Pagos button:active{
+    transform: scale(.98);
+}
+
+/*estilos del contenedor principal*/
+.container-historial-pagos {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.container-historial-movil {
+    display: none;
+}
+
+/*estilos de la tabla*/
+.container-historial-pc,
+.historial-encabezado-pagos {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: 1px solid #ccc;
+    padding: 10px  5px;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: white;
+}
+
+/*estilos del encabezado*/
+.historial-encabezado-pagos {
+    font-weight: bold;
+    background: rgba(1, 33, 73, 0.973);
+    color: white;
+    padding: 20px 5px ;
+    border-radius: 5px 5px 0 0;
+    border: none;
+}
+
+/*estilos de la columna 1 y 2*/
+.container-historial-pc span:nth-child(1),
+.container-historial-pc span:nth-child(2) {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/*estilos de la columna 3*/
+.container-historial-pc div:nth-child(3) {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*estilos de la columna 4 y 5*/
+.container-historial-pc span:nth-child(4),
+.container-historial-pc span:nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    gap: 5px;
+}
+
+/*estilos de la columna 4 icono*/
+.container-historial-pc span:nth-child(4) svg {
+    width: 25px;
+    height: 25px;
+}
+
+/*estilos de la columna 6 metodo pago*/
+.container-historial-pc span:nth-child(6) {
+    font-weight: bold;
+    padding:  5px 3px ;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+}
+
+.metodo-Efectivo {
+    color: #22c55e;
+    background-color: #22c55e38;
+}
+
+.metodo-Nequi {
+    color: rgba(0, 0, 255, 0.566);
+    background-color: rgba(0, 0, 255, 0.17);
+}
+
+.metodo-Tarjeta {
+    color: #ff9800;
+    background-color:  #ff99003d;
+}
+
+.metodo-Transferencia {
+    color: #2274c5;
+    background-color: #2274c54f;
+     overflow-wrap: break-word;
+}
+
+/*estilos de la columna 7 total*/
+.container-historial-pc span:nth-child(7) {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/*estilos de la columna 7 boton*/
+.container-historial-pc button {
+     color: rgb(87, 3, 255);
+    border: 1px solid rgb(87, 3, 255);
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    background: white;
+    cursor: pointer;
+}
+
+.container-historial-pc button:hover {
+    background-color: rgb(87, 3, 255);
+    color: white;
+}
+
+.historial-selec-paginacion {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.historial-limit {
+     position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+}

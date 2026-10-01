@@ -1,0 +1,946 @@
+@media (max-width: 768px) {
+    
+.detallePedido-container{
+    background:white;
+    padding:  10px;
+}
+.card-detallePedido{
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    background: white;
+    gap: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+
+.card-interno-detallePedido {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;  
+    text-transform: capitalize;
+}
+
+.card-interno-detallePedido img {
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.container-cantidad-nombre {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%; 
+}
+
+.nombre-precio-detalle {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+.acciones-detalle {
+    display: flex;
+    align-items: center;
+    margin-left: auto ;
+}
+
+.btn-restar-detalle {
+    background:  white;
+    display: flex;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+.btn-restar-detalle:hover {
+    background: #ccc;
+    color: white;
+}
+
+.btn-restar-detalle:active {
+    background: black;
+    color: white;
+}
+
+.cantidad-detalle {
+    height: 38px;
+    width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.btn-sumar-detalle {
+    display: flex;
+    background: white;
+     padding: 7px;
+    border: 1px solid #ccc;
+    color: blue;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.btn-sumar-detalle:hover {
+    background-color: rgba(0, 0, 255, 0.549);
+    color: white;
+}
+
+.btn-sumar-detalle:active {
+    background-color: blue;
+    color: white;
+}
+
+.btn-eliminar-detalle {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 7px;
+    border: 1px solid #ccc;
+    margin: auto;
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-eliminar-detalle:hover {
+    background-color: #ea1616b5;
+    color: white;
+}
+
+.btn-eliminar-detalle:active {
+    background-color: #ea1616;
+    color: white;
+}
+
+.contenedor-obs-detalle {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.contenedor-obs-detalle textarea {
+    font-size: 15px;
+    border-radius: 5px;  
+    padding:  5px;
+}
+
+.btn-guardar-obs-detalle {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;   
+    background-color:  #157347;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-guardar-obs-detalle:hover {
+    background-color: #249c64;
+}
+
+.btn-guardar-obs-detalle:active {
+    background-color: #22c55e;
+}
+
+.btn-cancelar-obs-detalle {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;   
+    background-color:   #ea1616;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-cancelar-obs-detalle:hover {
+    background-color: #ea1616a5;
+}
+
+.btn-cancelar-obs-detalle:active {
+    background-color: red;
+}
+
+.contenedor-obs-btn-detalle {
+    display: grid;
+    gap: 5px;
+}
+
+.btn-agregar-editar-detalle {
+     display: flex;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;   
+    color:   blue;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.btn-agregar-editar-detalle:hover {
+    background-color: rgba(0, 0, 255, 0.596);
+    color: white;
+}
+
+.btn-agregar-editar-detalle:active {
+    background-color: blue;
+    color: white;
+}
+
+.container-total-botones-finalizar {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding:7px;
+}
+
+.detalle-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-del-pedido-detalle {
+    color:  black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contenedor-btn-calcelar-finalizar {
+    display: grid;
+    gap: 5px;
+}
+
+.container-btn-eliminar-detalle {
+    margin-left: 5px;
+}
+
+.btn-comanda-imprimir {
+    color:  #2c7be5;
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;      
+    font-size: 16px;
+    background: white;
+    font-weight: bold;
+    border: 1px solid #2c7be5;
+    cursor: pointer;
+}
+
+.btn-comanda-imprimir:hover {
+    background-color: #2c7be5;
+    color: white;
+}
+
+.btn-comanda-imprimir:active {
+    background-color: #2c7be5;
+    color: white;
+}
+
+.btn-cancelar-detalle {
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;   
+    background: white;
+    color:   #ea1616;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ea1616;
+    cursor: pointer;
+}
+
+.btn-cancelar-detalle:hover {
+    background-color: #ea1616a4;
+    color: white;
+}
+
+.btn-cancelar-detalle:active {
+    background-color: #ea1616;
+    color: white;
+}
+
+.btn-finalizar-detalle {
+     display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;   
+    color: white;
+    background-color: #157347;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-finalizar-detalle:hover {
+    background-color: #249c64;
+}
+
+.btn-finalizar-detalle:active {
+    background-color: #157347;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+.detallePedido-container{
+    background:white;
+    padding:  10px;
+
+}
+.card-detallePedido{
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    background: white;
+    gap: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+
+.card-interno-detallePedido {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    background: white;
+    color: black;  
+    text-transform: capitalize;
+}
+
+.card-interno-detallePedido img {
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.container-cantidad-nombre {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%; 
+}
+
+.nombre-precio-detalle {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+.acciones-detalle {
+    display: flex;
+    align-items: center;
+    margin-left: auto ;
+}
+
+.btn-restar-detalle {
+    background:  white;
+    display: flex;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+.btn-restar-detalle:hover {
+    background: #ccc;
+    color: white;
+}
+
+.btn-restar-detalle:active {
+    background: black;
+    color: white;
+}
+
+.cantidad-detalle {
+    height: 38px;
+    width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.btn-sumar-detalle {
+    display: flex;
+    background: white;
+     padding: 7px;
+    border: 1px solid #ccc;
+    color: blue;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.btn-sumar-detalle:hover {
+    background-color: rgba(0, 0, 255, 0.549);
+    color: white;
+}
+
+.btn-sumar-detalle:active {
+    background-color: blue;
+    color: white;
+}
+
+.btn-eliminar-detalle {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 7px;
+    border: 1px solid #ccc;
+    margin: auto;
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-eliminar-detalle:hover {
+    background-color: #ea1616b5;
+    color: white;
+}
+
+.btn-eliminar-detalle:active {
+    background-color: #ea1616;
+    color: white;
+}
+
+.contenedor-obs-detalle {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.contenedor-obs-detalle textarea {
+    font-size: 15px;
+    border-radius: 5px;  
+    padding:  5px;
+}
+
+.btn-guardar-obs-detalle {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;   
+    background-color:  #157347;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-guardar-obs-detalle:hover {
+    background-color: #249c64;
+}
+
+.btn-guardar-obs-detalle:active {
+    background-color: #22c55e;
+}
+
+.btn-cancelar-obs-detalle {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;   
+    background-color:   #ea1616;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-cancelar-obs-detalle:hover {
+    background-color: #ea1616a5;
+}
+
+.btn-cancelar-obs-detalle:active {
+    background-color: red;
+}
+
+.contenedor-obs-btn-detalle {
+    display: grid;
+    gap: 5px;
+}
+
+.btn-agregar-editar-detalle {
+     display: flex;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;   
+    color:   blue;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.btn-agregar-editar-detalle:hover {
+    background-color: rgba(0, 0, 255, 0.596);
+    color: white;
+}
+
+.btn-agregar-editar-detalle:active {
+    background-color: blue;
+    color: white;
+}
+
+.container-total-botones-finalizar {
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 7px;
+}
+
+.detalle-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-del-pedido-detalle {
+    color:  black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contenedor-btn-calcelar-finalizar {
+    display: grid;
+    gap: 5px;
+}
+
+.container-btn-eliminar-detalle {
+    margin-left: 5px;
+}
+
+.btn-comanda-imprimir {
+    color:  #2c7be5;
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;      
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #2c7be5;
+    cursor: pointer;
+}
+
+.btn-comanda-imprimir:hover {
+    background-color: #2c7be5;
+    color: white;
+}
+
+.btn-comanda-imprimir:active {
+    background-color: #2c7be5;
+    color: white;
+}
+
+.btn-cancelar-detalle {
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;   
+    color:   #ea1616;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ea1616;
+    cursor: pointer;
+}
+
+.btn-cancelar-detalle:hover {
+    background-color: #ea1616a4;
+    color: white;
+}
+
+.btn-cancelar-detalle:active {
+    background-color: #ea1616;
+    color: white;
+}
+
+.btn-finalizar-detalle {
+     display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;   
+    color: white;
+    background-color: #157347;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-finalizar-detalle:hover {
+    background-color: #249c64;
+}
+
+.btn-finalizar-detalle:active {
+    background-color: #157347;
+}
+ 
+}
+
+@media (min-width: 1023px) {
+
+.contenedor-filas-detallePedido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 6px;
+}
+
+.card-detallePedido{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card-interno-detallePedido {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    background: white;
+    color: black;  
+    text-transform: capitalize;
+}
+
+.card-interno-detallePedido img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.container-cantidad-nombre {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%; 
+}
+
+.nombre-precio-detalle {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+.acciones-detalle {
+    display: flex;
+    align-items: center;
+    margin-left: auto ;
+}
+
+.btn-restar-detalle {
+    background:  white;
+    display: flex;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+.btn-restar-detalle:hover {
+    background: #ccc;
+    color: white;
+}
+
+.btn-restar-detalle:active {
+    background: black;
+    color: white;
+}
+
+.cantidad-detalle {
+    height: 38px;
+    width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.btn-sumar-detalle {
+    display: flex;
+    background: white;
+     padding: 7px;
+    border: 1px solid #ccc;
+    color: blue;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.btn-sumar-detalle:hover {
+    background-color: rgba(0, 0, 255, 0.549);
+    color: white;
+}
+
+.btn-sumar-detalle:active {
+    background-color: blue;
+    color: white;
+}
+
+.btn-eliminar-detalle {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 7px;
+    border: 1px solid #ccc;
+    margin: auto;
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-btn-eliminar-detalle {
+    margin-left: 5px;
+}
+
+.btn-eliminar-detalle:hover {
+    background-color: #ea1616b5;
+    color: white;
+}
+
+.btn-eliminar-detalle:active {
+    background-color: #ea1616;
+    color: white;
+}
+
+.contenedor-obs-detalle {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.contenedor-obs-detalle textarea {
+    font-size: 15px;
+    border-radius: 5px;  
+    padding:  5px;
+}
+
+.btn-guardar-obs-detalle {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;   
+    background-color:  #157347;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-guardar-obs-detalle:hover {
+    background-color: #249c64;
+}
+
+.btn-guardar-obs-detalle:active {
+    background-color: #22c55e;
+}
+
+.btn-cancelar-obs-detalle {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;   
+    background-color:   #ea1616;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-cancelar-obs-detalle:hover {
+    background-color: #ea1616a5;
+}
+
+.btn-cancelar-obs-detalle:active {
+    background-color: red;
+}
+
+.contenedor-obs-btn-detalle {
+    display: grid;
+    gap: 5px;
+}
+
+.btn-agregar-editar-detalle {
+     display: flex;
+    margin: 5px auto;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;   
+    color:   blue;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.btn-agregar-editar-detalle:hover {
+    background-color: rgba(0, 0, 255, 0.596);
+    color: white;
+}
+
+.btn-agregar-editar-detalle:active {
+    background-color: blue;
+    color: white;
+}
+
+.container-total-botones-finalizar {
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+
+.detalle-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-del-pedido-detalle {
+    color:  black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contenedor-btn-calcelar-finalizar {
+    display: grid;
+    gap: 5px;
+}
+
+.btn-comanda-imprimir {
+    color:  #2c7be5;
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;      
+    background: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #2c7be5;
+    cursor: pointer;
+}
+
+.btn-comanda-imprimir:hover {
+    background-color: #2c7be5;
+    color: white;
+}
+
+.btn-comanda-imprimir:active {
+    background-color: #2c7be5;
+    color: white;
+}
+
+
+.btn-cancelar-detalle {
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: white;
+    border-radius: 5px;   
+    color:   #ea1616;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ea1616;
+    cursor: pointer;
+}
+
+.btn-cancelar-detalle:hover {
+    background-color: #ea1616a4;
+    color: white;
+}
+
+.btn-cancelar-detalle:active {
+    background-color: #ea1616;
+    color: white;
+}
+
+.btn-finalizar-detalle {
+     display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;   
+    color: white;
+    background-color: #157347;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-finalizar-detalle:hover {
+    background-color: #249c64;
+}
+
+.btn-finalizar-detalle:active {
+    background-color: #157347;
+}
+}

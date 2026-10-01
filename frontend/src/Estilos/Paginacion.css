@@ -1,0 +1,25 @@
+.paginacion-container button {
+  padding: 6px 10px;
+  margin: 3px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.paginacion-container button:hover {
+  background: #f3f3f3;
+}
+
+.paginacion-container button.activo {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.icono-chevron  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

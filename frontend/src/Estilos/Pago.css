@@ -1,0 +1,168 @@
+
+
+.container-pago-info {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+}
+
+.pago-info {
+    display: grid;
+    grid-template-columns: 40px 110px 1fr;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+}
+
+.pago-info  span:nth-child(1) {
+    border-radius: 5px ;
+   display: flex;
+   background: #cccccca4;
+   align-items: center;
+   padding: 8px;
+   justify-content: center;
+    
+}
+
+.pago-info span:nth-child(2) {
+    font-weight: bold;
+   color: rgba(0, 0, 0, 0.855);
+}
+.pago-info span:nth-child(3) {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*estilos de los pagos*/
+.container-los-pagos {
+    padding-top: 15px;
+}
+.recibido-pago, 
+.cambio-pago, 
+.falta-pago,
+.metodo-pago {
+    display: grid;
+    grid-template-columns: 40px  110px 1fr;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+}
+
+.recibido-pago span:nth-child(1) {
+     border-radius: 5px ;
+   display: flex;
+   background: #cccccca4;
+   align-items: center;
+   padding: 8px;
+   color:  #22c55e;
+   justify-content: center;
+}
+
+.cambio-pago span:nth-child(1),
+.falta-pago span:nth-child(1),
+.metodo-pago span:nth-child(1) {
+     border-radius: 5px ;
+   display: flex;
+   background: #cccccca4;
+   align-items: center;
+   padding: 8px;
+   justify-content: center;
+}
+
+.recibido-pago span:nth-child(2), 
+.cambio-pago span:nth-child(2),
+.falta-pago span:nth-child(2),
+.metodo-pago span:nth-child(2) {
+     font-weight: bold;
+   color: rgba(0, 0, 0, 0.855);
+}
+
+.recibido-pago input  {
+    width: 90%;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    padding: 8px;
+
+}
+
+.metodo-pago select {
+     border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    padding: 8px;
+
+}
+
+.cambio-pago span:nth-child(3) {
+     font-weight: bold;
+     padding: 7px;
+   color:#22c55e;
+}
+
+.falta-pago span:nth-child(3) {
+     font-weight: bold;
+     padding: 7px;
+   color: red;
+}
+
+
+.btn-confirmar-pago {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    padding: 5px;
+    margin-top: 15px ;
+}
+
+.btn-confirmar-pago button {
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-confirmar-pago button:nth-child(1) {
+    border: 1px solid #ccc;
+    background: #cccccc94;
+}
+
+.btn-confirmar-pago button:nth-child(1):hover {
+    background: #cccccc72;
+    border: 1px solid #ccc;
+}
+
+.btn-confirmar-pago button:nth-child(1):active {
+    border: 1px solid #ccc;
+    background: #cccccc94;
+}
+
+.btn-confirmar-pago button:nth-child(2) {
+    border: 1px solid #ccc;
+    background: blue;
+    color: white;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn-confirmar-pago button:nth-child(2):disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.btn-confirmar-pago button:nth-child(2):hover {
+    border: 1px solid blue;
+    background: white;
+    color: blue;  
+}
+
+.btn-confirmar-pago button:nth-child(2):active {
+    border: 1px solid #ccc;
+    background: blue;
+    color: white;  
+}
+

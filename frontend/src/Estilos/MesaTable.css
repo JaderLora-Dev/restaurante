@@ -1,0 +1,318 @@
+@media (max-width: 768px) {
+    
+.container-padre-mesa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 99%;
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+     border-radius: 0px 0px 5px 5px;
+}
+
+.container-interno-mesas {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*contenedor de logo mesa y estado*/
+.container-mesas-table {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    gap: 20px;
+}
+
+/*estilos del icono de mesa*/
+.icono-mesa svg {
+    width: 35px;
+    height: 35px;
+    padding: 9px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.estado-ocupada svg {
+    border: none;
+    border-radius: 5px;
+    color: red;
+    background: rgba(255, 0, 0, 0.196);
+}
+
+.estado-disponible svg {
+    color: #22c55e;
+    border: none;
+    border-radius: 5px;
+    background-color: #22c55e38;
+}
+
+
+/* estilos del contenedor del estado y id mesa*/
+.mesaTable-id-numero {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Id-mesa {
+    color: #666;
+    font-weight: 600;
+}
+
+.numero-de-mesa {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/*contenedor de estado y botones principal*/
+.estado-mesa-contenedor {   
+   margin-left: auto;
+}
+.estado-mesa{
+    font-weight: bold;
+    padding: 6px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.estado-mesa.estado-ocupada {
+    background: rgba(255, 0, 0, 0.196);
+    color: red;
+}
+
+.estado-mesa.estado-disponible {
+    color: #22c55e;
+    background-color: #22c55e38;
+}
+
+/*estilos de numero de mesa y botones*/
+.contenedor-mesa-botones {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    gap: 15px;
+}
+
+.contenedor-mesa-botones button {
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+     font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton-editar-mesa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;  
+    color: rgb(87, 3, 255);
+    background-color: white;
+    border: 1px solid rgb(87, 3, 255);
+}
+
+.boton-editar-mesa svg {
+    width: 20px;
+    height: 20px;
+}
+
+.boton-editar-mesa:hover{
+    background-color: rgb(87, 3, 255);
+    color: white;
+}
+
+.boton-editar-mesa:active {
+    background-color: rgba(87, 3, 255, 0.636);
+}
+
+
+.btn-eliminar-mesa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+}
+
+.btn-eliminar-mesa svg {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-eliminar-mesa:hover {
+    background-color: red;
+    color: white;
+}
+
+.btn-eliminar-mesa:active {
+    background-color: rgba(255, 0, 0, 0.455);
+}
+}
+
+@media (min-width: 769px) {
+    
+.container-padre-mesa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: auto;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 99%;
+    padding: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.container-interno-mesas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*contenedor de logo mesa y estado*/
+.container-mesas-table {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    gap: 10px;
+}
+
+/*estilos del icono de mesa*/
+.icono-mesa svg {
+    width: 35px;
+    height: 35px;
+    padding: 9px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.estado-ocupada svg {
+    border: none;
+    border-radius: 5px;
+    color: red;
+    background: rgba(255, 0, 0, 0.196);
+}
+
+.estado-disponible svg {
+    color: #22c55e;
+    border: none;
+    border-radius: 5px;
+    background-color: #22c55e38;
+}
+
+
+/* estilos del contenedor del estado y id mesa*/
+.mesaTable-id-numero {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Id-mesa {
+    color: #666;
+    font-weight: 600;
+}
+
+.numero-de-mesa {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/*contenedor de estado y botones principal*/
+.estado-mesa-contenedor {   
+   margin-left: auto;
+}
+.estado-mesa{
+    font-weight: bold;
+    padding: 6px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.estado-mesa.estado-ocupada {
+    background: rgba(255, 0, 0, 0.196);
+    color: red;
+}
+
+.estado-mesa.estado-disponible {
+    color: #22c55e;
+    background-color: #22c55e38;
+}
+
+/*estilos de numero de mesa y botones*/
+.contenedor-mesa-botones {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    gap: 15px;
+}
+
+.contenedor-mesa-botones button {
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+     font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton-editar-mesa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;  
+    color: rgb(87, 3, 255);
+    background-color: white;
+    border: 1px solid rgb(87, 3, 255);
+}
+
+.boton-editar-mesa svg {
+    width: 20px;
+    height: 20px;
+}
+
+.boton-editar-mesa:hover{
+    background-color: rgb(87, 3, 255);
+    color: white;
+}
+
+.boton-editar-mesa:active {
+    background-color: rgba(87, 3, 255, 0.636);
+}
+
+
+.btn-eliminar-mesa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+}
+
+.btn-eliminar-mesa svg {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-eliminar-mesa:hover {
+    background-color: red;
+    color: white;
+}
+
+.btn-eliminar-mesa:active {
+    background-color: rgba(255, 0, 0, 0.455);
+}
+}

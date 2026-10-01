@@ -1,0 +1,171 @@
+/*estilos de las cards resumen*/
+.cards-dashboard {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px ;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: white;    
+}
+
+/*estilos de las cards resumen ventas hoy*/
+.card-interno-ventasHoy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    color: #666;  
+    gap: 5px;
+}
+
+.ico-ventasHoy svg {
+    background:  #249c64;
+    color: white;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+
+.text-numero-ventasHoy {
+    font-weight: bold;
+    font-size: 20px;
+     color:  #249c64;
+}
+
+/*estilos de las cards resumen pedidos*/
+.card-interno-pedidos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    color: #666;  
+    gap: 5px;
+}
+
+.ico-pedidos svg {
+    background: #3f9cfe;
+    color: white;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50px;
+}
+
+.text-numero-pedidos {
+    font-weight: bold;
+    font-size: 20px;
+    color: #3f9cfe;
+}
+
+.card-interno-mesa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    color: #666;
+    gap: 5px;
+}
+
+.ico-mesa svg {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50px;
+}
+
+.text-numero-mesa {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff9800;
+}
+
+/*estilos de las cards resumen usuarios*/
+.card-interno-usuarios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+      font-weight: bold;
+    color: #666;  
+    gap: 5px;
+}
+
+.ico-usuarios svg  {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50px;
+}
+
+.text-numero-usuarios {
+    font-weight: bold;
+    font-size: 20px;
+    color: blue;
+}
+
+/*estilos de las cards resumen productos*/
+.card-interno-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    color: #666;  
+    gap: 5px;
+}
+
+.ico-productos svg {
+    background:  rgb(87, 3, 255);
+    color: white;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50px;
+}
+
+
+.text-numero-productos {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(87, 3, 255);
+}
+
+/*estilos de las cards resumen pendiente*/
+.card-interno-mesaD {
+     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    color: #666;  
+    gap: 5px;
+}
+
+.ico-mesaD svg {
+    background: #21ee6c;
+    color: white;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+
+.text-numero-mesaD {
+    font-weight: bold;
+    font-size: 20px;
+    color: #21ee6c;
+}
+
+

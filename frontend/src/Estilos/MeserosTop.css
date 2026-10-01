@@ -1,0 +1,66 @@
+/*estilos de meseros con mas ventas */
+.card-mesero-dashboard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.titulo-meseroo {
+    padding: 0 10px;
+}
+
+.card-interno-mesero {
+    border-top: 1px solid #ccc;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono-meseroo svg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background: rgb(87, 3, 255);
+    padding: 8px;
+    color: white;
+}
+
+.primer-lugar svg  {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background:  #21ee6c;
+    padding: 8px;
+    color: white;
+
+}
+
+.nombre-meseroo {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.container-meseroo-cantidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.cantidad-meseroo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.primer-lugar .cantidad-meseroo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #21ee6c;
+}
+
+.text-mesero {
+    color: #666;
+    font-weight: bold;
+}

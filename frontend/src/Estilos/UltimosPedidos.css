@@ -1,0 +1,132 @@
+/*estilos de ultimos pedidos*/
+.ultimos-pedidos {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}
+
+.titulo-ultimos-pedido {
+    padding: 0 10px;
+}
+
+.card-ultimos-pedidos {
+    border-top: 1px solid #ccc;
+    padding: 20px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.estado-ultimo-pedido {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize; 
+}
+
+/*estilos de pedidos finalizados*/
+.numero-ultimo-pedido.Finalizado {
+    font-weight: bold;
+    font-size: 17px;
+    color: #22c55e;
+    background: #22c55e29;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.container-mesero-mesa {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    
+}
+.mesaTexto-ultimo-pedido {
+    font-weight: bold;
+}
+
+.hora-Ultimo-pedidos {
+    color: #666;
+}
+.estado-ultimo-pedido.Finalizado {
+    color: #22c55e;
+    background: #22c55e29;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+/*estilos de pedidos pendientes*/
+.numero-ultimo-pedido.Cancelado {
+    font-weight: bold;
+    font-size: 17px;
+    color: #ff9800;
+    background: #ff99002b;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.estado-ultimo-pedido.Cancelado {
+     color: #ff9800;
+    background: #ff99002b;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+/*estilos de pedidos preparando*/
+.numero-ultimo-pedido.Activo {
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(87, 3, 255);
+    background: rgb(87, 3, 255, 0.166);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.estado-ultimo-pedido.Activo {
+   color: #22c55e;
+    background: #22c55e29;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+/*estilos de pedidos listo*/
+.numero-ultimo-pedido.listo {
+    font-weight: bold;
+    font-size: 17px;
+    color: #3b82f6;
+    background: #3b83f63a;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.estado-ultimo-pedido.listo {
+    display: flex;
+    justify-content: center;
+    width: 75px;
+    color: #3b82f6;
+    background: #3b83f63a;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+/*estilos de pedidos entregado*/
+.numero-ultimo-pedido.entregado {
+    font-weight: bold;
+    font-size: 17px;
+    color: #7ddacf;
+    background: #7ddacf3a;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.estado-ultimo-pedido.entregado {
+    color: #7ddacf;
+    background: #7ddacf3a;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 10px;
+}

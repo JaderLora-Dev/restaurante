@@ -1,0 +1,234 @@
+@media (max-width: 768px) {
+
+.container-buscar-producto-pedido {
+    padding: 10px ;
+    width: 50%;
+}
+
+.categorias-productosPedido {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    gap: 5px;
+    padding: 10px;
+    background: white;
+}
+
+
+
+.categorias-productosPedido button{
+    display: flex;
+    padding: 10px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;   
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.categorias-productosPedido button.activo{
+    background: linear-gradient(  rgba(1, 33, 73, 0.973), rgb(4, 59, 143) );
+    color: white;
+    font-weight: bold;
+}
+
+.categorias-productosPedido button:hover{
+    background: linear-gradient(  rgba(1, 33, 73, 0.973), rgb(4, 59, 143) );
+    color: white;
+}
+
+/*estilos de los productos*/
+.productos-pedido-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    padding: 10px;
+}
+
+.productosPedido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);  
+}
+
+.productosPedido img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: 100px;
+}
+    
+.productoPedido-nombre {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.productoPedido-precio  {
+     font-size: 18px;
+    padding: 5px;
+    font-weight: 700;        
+}
+
+/*estilos de los botones productos*/
+.productosPedido button {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;   
+    background-color:  #157347;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.productosPedido button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.productosPedido button:hover {
+    background-color: #249c64;
+}
+
+.productosPedido button:active {
+    background-color: #22c55e;
+}
+
+
+} 
+@media (min-width:769px) {
+
+.container-buscar-producto-pedido {
+    padding: 7px 15px ;
+    width: 50%;
+}
+
+.categorias-productosPedido {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    gap: 5px;
+    padding: 10px;
+    background: white;
+}
+
+
+
+.categorias-productosPedido button{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 5px;   
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.categorias-productosPedido button.activo{
+    background: linear-gradient(  rgba(1, 33, 73, 0.973), rgb(4, 59, 143) );
+    color: white;
+    font-weight: bold;
+}
+
+.categorias-productosPedido button:hover{
+    background: linear-gradient(  rgba(1, 33, 73, 0.973), rgb(4, 59, 143) );
+    color: white;
+}
+
+/*estilos de los productos*/
+.productos-pedido-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    padding: 10px;
+}
+
+.productosPedido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);  
+}
+
+.productosPedido img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: 100px;
+}
+    
+.productoPedido-nombre {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.productoPedido-precio  {
+     font-size: 18px;
+    padding: 5px;
+    font-weight: 700;        
+}
+
+/*estilos de los botones productos*/
+.productosPedido button {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;   
+    background-color:  #157347;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.productosPedido button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.productosPedido button:hover {
+    background-color: #249c64;
+}
+
+.productosPedido button:active {
+    background-color: #22c55e;
+}
+}

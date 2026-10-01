@@ -1,0 +1,368 @@
+@media (max-width: 768px) {
+
+.categoria-padre {
+    margin: auto ;
+    border: 1px solid #ccc;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+    
+/*container de las categorias*/
+.container-categoria-padre {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background: white;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 15px;
+}
+
+/*container del id, nombre y estado*/
+.contenedor-2dos-categoria {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.id-numero {
+    background-color: rgba(87, 3, 255, 0.221);
+    padding: 10px 18px;
+    color: rgb(87, 3, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.nombre-categoria {
+    margin-right: auto;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.estado-categoria.estado-activo {
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    color: #22c55e;
+    background-color: #22c55e38;
+}
+
+.estado-categoria.estado-inactivo {
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 17px;
+    margin: 5px;
+     color: black;
+    background-color: rgba(0, 0, 0, 0.208);
+}
+
+/*container categoria de botones estilos*/
+.contenedor-3ro-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contenedor-3ro-categoria button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.btn-editar {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(87, 3, 255);
+    background-color: white;
+    border: 1px solid rgb(87, 3, 255);
+    border-radius: 5px;
+}
+
+.btn-editar svg {
+    width: 22px;
+    height: 22px;
+}
+
+.btn-editar:hover{
+    background-color: rgb(87, 3, 255);
+    color: white;
+}
+
+.btn-editar:active {
+    background-color: rgba(87, 3, 255, 0.636);
+}
+
+.btn-estado-categoria.btn-activo {
+    color: #22c55e;
+    border: 1px solid #22c55e;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-estado-categoria.btn-activo svg {
+    width: 22px;
+    height: 22px;
+}
+
+.btn-estado-categoria.btn-activo:hover {
+    background-color: #22c55e;
+    color: white;
+}
+
+.bnt-estado-categoria.btn-activo:active {
+    background-color: #22c55e6e;
+}
+
+/*estilos del bton inactivo*/
+.btn-estado-categoria.btn-inactivo {
+    color: black;
+    border: 1px solid black;
+    background: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-estado-categoria.btn-inactivo svg {
+    width: 22px;
+    height: 22px;
+}
+
+.btn-estado-categoria.btn-inactivo:hover {
+    background-color: black;
+    color: white;
+}
+
+.bnt-estado-categoria.btn-inactivo:active {
+    background-color: rgba(0, 0, 0, 0.208);
+}
+
+.boton-eliminar {
+    gap: 5px;
+    padding:   10px;
+    border-radius: 5px;
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-eliminar svg {
+    width: 22px;
+    height: 22px;
+}
+
+.boton-eliminar:hover {
+    background-color: red;
+    color: white;
+}
+
+.boton-eliminar:active {
+    background-color: rgba(255, 0, 0, 0.455);
+}
+
+} 
+
+@media (min-width: 769px) {
+
+.categoria-padre {
+    margin: auto ;
+    border: 1px solid #ccc;
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+    
+/*container de las categorias*/
+.container-categoria-padre {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background: white;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 15px;
+}
+
+/*container del id, nombre y estado*/
+.contenedor-2dos-categoria {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.id-numero {
+    background-color: rgba(87, 3, 255, 0.221);
+    padding: 10px 18px;
+    color: rgb(87, 3, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.nombre-categoria {
+    margin-right: auto;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.estado-categoria.estado-activo {
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    color: #22c55e;
+    background-color: #22c55e38;
+}
+
+.estado-categoria.estado-inactivo {
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 17px;
+    margin: 5px;
+     color: black;
+    background-color: rgba(0, 0, 0, 0.208);
+}
+
+/*container categoria de botones estilos*/
+.contenedor-3ro-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contenedor-3ro-categoria button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.btn-editar {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(87, 3, 255);
+    background-color: white;
+    border: 1px solid rgb(87, 3, 255);
+    border-radius: 5px;
+}
+
+.btn-editar svg {
+    width: 22px;
+    height: 22px;
+}
+
+.btn-editar:hover{
+    background-color: rgb(87, 3, 255);
+    color: white;
+}
+
+.btn-editar:active {
+    background-color: rgba(87, 3, 255, 0.636);
+}
+
+.btn-estado-categoria.btn-activo {
+    color: #22c55e;
+    border: 1px solid #22c55e;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-estado-categoria.btn-activo svg {
+    width: 22px;
+    height: 22px;
+}
+
+.btn-estado-categoria.btn-activo:hover {
+    background-color: #22c55e;
+    color: white;
+}
+
+.bnt-estado-categoria.btn-activo:active {
+    background-color: #22c55e6e;
+}
+
+/*estilos del bton inactivo*/
+.btn-estado-categoria.btn-inactivo {
+    color: black;
+    border: 1px solid black;
+    background: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-estado-categoria.btn-inactivo svg {
+    width: 22px;
+    height: 22px;
+}
+
+.btn-estado-categoria.btn-inactivo:hover {
+    background-color: black;
+    color: white;
+}
+
+.bnt-estado-categoria.btn-inactivo:active {
+    background-color: rgba(0, 0, 0, 0.208);
+}
+
+.boton-eliminar {
+    gap: 5px;
+    padding:   10px;
+    border-radius: 5px;
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-eliminar svg {
+    width: 22px;
+    height: 22px;
+}
+
+.boton-eliminar:hover {
+    background-color: red;
+    color: white;
+}
+
+.boton-eliminar:active {
+    background-color: rgba(255, 0, 0, 0.455);
+}
+}

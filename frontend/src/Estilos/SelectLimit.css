@@ -1,0 +1,5 @@
+.container-select select {
+    border: 1px solid #ccc;
+    padding: 7px;
+    cursor: pointer;
+}

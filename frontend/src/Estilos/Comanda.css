@@ -1,0 +1,125 @@
+.comanda {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.comanda-encabezado {
+  text-align: center;
+}
+
+.comanda-encabezado h2 {
+ margin: 0;
+ font-size: 24px;
+}
+
+.comanda-encabezado p {
+  margin: 4px 0;
+}
+
+.comanda-linea {
+  border-top: 1px dashed #555;
+  margin: 12px 0;
+}
+
+.comanda-detalles {
+  display: flex;
+  flex-direction: column;
+}
+
+.comanda-producto {
+  padding: 12px 0;
+  border-bottom: 1px dashed #999;
+}
+
+.comanda-producto-principal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.comanda-cantidad {
+  font-size: 20px;
+  min-width: 45px;
+}
+
+.comanda-nombre {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.comanda-observacion {
+  margin: 8px 0 0 57px;
+  font-size: 14px;
+}
+
+.comanda-observacion strong {
+  font-weight: 700;
+}
+.comanda-total-productos {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+.acciones-comanda {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.acciones-comanda button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.acciones-comanda button:hover {
+  transform: translateY(-1px);
+}
+
+.btn-imprimir-comanda {
+  background-color: #2c7be5;
+  color: white;
+}
+
+.btn-cerrar-comanda {
+  background-color: #e5e5e5;
+  color: #333;
+}
+
+.btn-cerrar-comanda:hover {
+  background-color: #d5d5d5;
+}
+
+@media print {
+    @page {
+        size: 80mm auto;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .comanda {
+        width: 80mm;
+        padding: 5mm;
+        box-sizing: border-box;
+    }
+
+    .acciones-comanda {
+        display: none;
+    }
+}

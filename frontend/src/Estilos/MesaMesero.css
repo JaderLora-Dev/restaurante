@@ -1,0 +1,375 @@
+@media (max-width: 768px) {
+    
+/* estilos de mesas*/
+.header_panel-mesero{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background:  rgba(1, 33, 73, 0.973);
+    align-items: center;
+    color: white;
+    height: 80px;
+    margin-bottom: 10px;
+    box-shadow:  7px  4px 12px  rgba(0,0,0,.2);;
+    z-index: 900;
+}
+
+.container-sesion {
+    width: 95%;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.mesas_container {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px, 1fr));
+    gap: 10px;
+    background: white;
+}
+
+.mesa_card {
+    border: 2px solid;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+.mesa_card:hover {
+    transform: scale(1.03);
+}
+
+.mesas_iconos_estado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.mesas_iconos_estado svg {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+
+}
+
+.mesa_card.Disponible {
+    background: #04893514;
+    border: 4px solid #22c55e;    
+}
+
+.icono-Disponible svg {
+    background:  #2cf7704a;
+    color: #066c2c;
+    padding: 9px;
+}
+
+.Disponible p {
+    color: #066c2c;
+    background: #2cf7704a;
+}
+
+.nombre_mesa {
+    margin: auto;
+    font-size: 25px;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+}
+.texto_icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.texto_icono svg {
+    width: 5px;
+    height: 5px;
+    border: none;
+    padding: 5px;
+    background:  #066c2c;
+    border-radius: 50%;
+}
+
+
+.mesa_card.Ocupada {
+    background: #ea16160c;
+    color:  #ea1616;  
+    border: 4px solid #ea1616;      
+}
+
+.icono-Ocupada svg {
+    background: #ea161625;
+    color:  #ea1616;  
+    padding: 9px;
+} 
+
+.texto_icono.Ocupada  {
+    background-color: #ea161625;
+    color: #ea1616;
+}
+
+.texto_icono.Ocupada svg {
+    width: 5px;
+    background: #ea1616;
+    height: 5px;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;    
+}
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    
+/* estilos de mesas*/
+.header_panel-mesero{
+   display: none;
+}
+
+.container-sesion {
+    width: 97%;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.mesas_container {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px, 1fr));
+    gap: 10px;
+    background: white;
+}
+
+.mesa_card {
+    border: 2px solid;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+.mesa_card:hover {
+    transform: scale(1.03);
+}
+
+.mesas_iconos_estado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.mesas_iconos_estado svg {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+
+}
+
+.mesa_card.Disponible {
+    background: #04893514;
+    border: 4px solid #22c55e;    
+}
+
+.icono-Disponible svg {
+    background:  #2cf7704a;
+    color: #066c2c;
+    padding: 9px;
+}
+
+.Disponible p {
+    color: #066c2c;
+    background: #2cf7704a;
+}
+
+.nombre_mesa {
+    margin: auto;
+    font-size: 25px;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+}
+.texto_icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.texto_icono svg {
+    width: 5px;
+    height: 5px;
+    border: none;
+    padding: 5px;
+    background:  #066c2c;
+    border-radius: 50%;
+}
+
+
+.mesa_card.Ocupada {
+    background: #ea16160c;
+    color:  #ea1616;  
+    border: 4px solid #ea1616;      
+}
+
+.icono-Ocupada svg {
+    background: #ea161625;
+    color:  #ea1616;  
+    padding: 9px;
+} 
+
+.texto_icono.Ocupada  {
+    background-color: #ea161625;
+    color: #ea1616;
+}
+
+.texto_icono.Ocupada svg {
+    width: 5px;
+    background: #ea1616;
+    height: 5px;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;    
+}
+
+}
+
+@media (min-width: 1023px) {
+    
+/* estilos de mesas*/
+.header_panel-mesero{
+   display: none;
+}
+
+.container-sesion {
+    width: 97%;
+    margin: auto;
+    padding: 0px 10px;
+    height: 100vh;
+    background: white;
+}
+
+.mesas_container {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px, 1fr));
+    gap: 10px;
+    background: white;
+}
+
+.mesa_card {
+    border: 2px solid;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+.mesa_card:hover {
+    transform: scale(1.03);
+}
+
+.mesas_iconos_estado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.mesas_iconos_estado svg {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+
+}
+
+.mesa_card.Disponible {
+    background: #04893514;
+    border: 4px solid #22c55e;    
+}
+
+.icono-Disponible svg {
+    background:  #2cf7704a;
+    color: #066c2c;
+    padding: 9px;
+}
+
+.Disponible p {
+    color: #066c2c;
+    background: #2cf7704a;
+}
+
+.nombre_mesa {
+    margin: auto;
+    font-size: 25px;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+}
+.texto_icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.texto_icono svg {
+    width: 5px;
+    height: 5px;
+    border: none;
+    padding: 5px;
+    background:  #066c2c;
+    border-radius: 50%;
+}
+
+
+.mesa_card.Ocupada {
+    background: #ea16160c;
+    color:  #ea1616;  
+    border: 4px solid #ea1616;      
+}
+
+.icono-Ocupada svg {
+    background: #ea161625;
+    color:  #ea1616;  
+    padding: 9px;
+} 
+
+.texto_icono.Ocupada  {
+    background-color: #ea161625;
+    color: #ea1616;
+}
+
+.texto_icono.Ocupada svg {
+    width: 5px;
+    background: #ea1616;
+    height: 5px;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;    
+}
+
+}

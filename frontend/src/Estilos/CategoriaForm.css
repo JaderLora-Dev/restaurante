@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+    
+    
+/*estilos del formulario*/   
+.contenedor-formuario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenedor-interno {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-interno label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contenedor-interno input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-formulario {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #198754;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-formulario:hover {
+  background: #157347;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+/*estilos del formulario*/   
+.contenedor-formuario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenedor-interno {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-interno label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contenedor-interno input
+ {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-formulario {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #198754;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-formulario:hover {
+  background: #157347;
+} 
+}
+
+@media (min-width: 1023px) {
+    /*estilos del formulario*/   
+.contenedor-formuario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenedor-interno {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-interno label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contenedor-interno input
+ {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-formulario {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #198754;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.btn-formulario:hover {
+  background: #157347;
+} 
+    
+}

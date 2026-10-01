@@ -1,0 +1,379 @@
+@media (max-width: 768px) {
+    
+.header-pedidos-admin {
+   width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 33, 73, 0.973);
+    color: white;
+    height: 80px;
+    z-index: 100;
+    margin-bottom: 10px;
+    box-shadow:  7px  4px 12px  rgba(0,0,0,.2);
+}
+
+.titulo-listaPedidos {
+    display: none;
+}
+
+.container-filtros-pedidos-admin {
+    width: 99%;
+    border: 1px solid #ccc;
+    background: white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+/*estilos del fitros*/
+.filtros-pedidos-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filtros-pedidos-admin select {
+   width: 100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    color: #5a6268;
+}
+
+.container-pedidos-admin {
+    padding: 10px;
+    display: flex;
+    width: 99%;
+    margin: auto;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+}
+
+.pedidos-pc-admin {
+    display: none;
+}
+
+.encabezado-pedidos-admin {
+    display: none;
+}
+/*estilos del contenido interno*/
+.pedidos-telefono-admin {
+    border: 1px solid #ccc;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    background: white;
+    gap: 10px;
+    padding: 10px;
+}
+
+.conenido-del-pedido-1rows {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.num-pedidos-admin {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*estilos del estado*/
+.estado-admin-p {
+    margin: auto 10px;
+    border-radius: 5px;
+    padding: 5px 9px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.estado-admin-p svg {
+    width: 3px;
+    height: 3px;
+    border: none;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+/*estados activos*/
+.pedi-esta-Activo {
+    color: #22c55e;
+    background-color: #22c55e38;
+}
+
+.pedi-esta-Activo svg {
+    background:  #22c55e;
+}
+
+/*estilos del total*/
+.total-pedido-admin {
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.total-Activo {
+    color: blue;
+}
+
+/*estado finalizado*/
+.pedi-esta-Finalizado {
+   color: #22c55e;
+    background-color: #22c55e38;
+}
+
+.pedi-esta-Finalizado svg {
+    background:  #22c55e;
+}
+
+.total-Finalizado {
+    color: #22c55e;
+}
+
+/*estado cancelado*/
+.pedi-esta-Cancelado {
+    color: #ff9800;
+    background-color:  #ff99003d;
+}
+
+.pedi-esta-Cancelado svg {
+    background:  #ff9800;
+}
+
+.total-Cancelado {
+    color: #ff9800;
+}
+
+/*estilos de mesa y mesero*/
+.contenido-mesa-mesero {
+    display: flex;
+    gap: 8px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.fecha-pedidos-admin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.54);  
+}
+
+.btn-VerDetalle-admin {
+    color: rgb(87, 3, 255);
+    border: 1px solid rgb(87, 3, 255);
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 10px;
+    background: white;
+    cursor: pointer;
+}
+
+.btn-VerDetalle-admin:hover {
+    background-color: rgb(87, 3, 255);
+    color: white;
+}
+}
+
+@media (min-width:769px) {
+.pedidos-telefono-admin {
+    display: none;
+}
+
+.header-pedidos-admin {
+   display: none;
+}
+
+.container-filtros-pedidos-admin {
+    width: 99%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background: white;
+    
+}
+
+.titulo-listaPedidos {
+    display:  block;
+    padding: 15px 0;
+    margin: auto; 
+}
+
+/*estilos del fitros*/
+.filtros-pedidos-admin {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.filtros-pedidos-admin select {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    color: #5a6268;
+}
+
+.container-pedidos-administrador {
+    border: 1px solid #ccc;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.encabezado-pedidos-admin,
+ .pedidos-pc-admin {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     border: 1px solid #ccc;
+    padding: 10px  5px;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: white;
+    }
+    
+.encabezado-pedidos-admin {
+    font-weight: bold;
+    background: rgba(1, 33, 73, 0.973);
+    color: white;
+    padding: 20px 5px ;
+    border-radius: 5px 5px 0 0;
+    border: none;
+}
+
+.pedidos-pc-admin {
+    align-items: center;
+    border-top: 1px solid #ccc;
+    background-color: white;
+}
+
+.num-pedidos-admin {
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.mesa-pedidos-admin {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*estilos del estado*/
+.estado-admin-p {
+    margin: auto;
+    padding: 7px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.estado-admin-p svg {
+    width: 3px;
+    height: 3px;
+    border: none;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+/*estados activos*/
+.pedi-esta-Activo {
+    color: #22c55e;
+    background-color: #22c55e38;
+}
+
+.pedi-esta-Activo svg {
+    background:  #22c55e;
+}
+
+/*estilos del total*/
+.total-pedido-admin {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.total-Activo {
+    color: blue;
+}
+
+/*estado finalizado*/
+.pedi-esta-Finalizado {
+   color: #22c55e;
+    background-color: #22c55e38;
+}
+
+.pedi-esta-Finalizado svg {
+    background:  #22c55e;
+}
+
+.total-Finalizado {
+    color: #22c55e;
+}
+
+/*estado cancelado*/
+.pedi-esta-Cancelado {
+    color: #ff9800;
+    background-color:  #ff99003d;
+}
+
+.pedi-esta-Cancelado svg {
+    background:  #ff9800;
+}
+
+.total-Cancelado {
+    color: #ff9800;
+}
+
+/*estilos de mesero*/
+.mesero-pedidos-admin {
+    font-weight: bold;
+    color: black;
+}
+
+.fecha-pedidos-admin {
+    display: flex;
+    flex-direction: column;
+    color: black; 
+    font-size: 16px; 
+}
+
+.btn-VerDetalle-admin {
+    color: rgb(87, 3, 255);
+    border: 1px solid rgb(87, 3, 255);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 8px;
+    background: white;
+    cursor: pointer;
+}
+
+.btn-VerDetalle-admin:hover {
+    background-color: rgb(87, 3, 255);
+    color: white;
+}
+    
+}

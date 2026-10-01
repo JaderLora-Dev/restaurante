@@ -1,0 +1,537 @@
+@media (max-width: 767px) {
+
+.contenedor-padre-dashboard {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+}
+.header-dashborad {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    background: rgba(1, 33, 73, 0.973);
+    color: white;
+    height: 80px;
+    z-index: 100;
+    margin-bottom: 10px;
+    box-shadow:  7px  4px 12px  rgba(0,0,0,.2);
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/*estilos de container graficas*/
+.grafica-dashboard {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 5px;
+}
+
+.contenedor-titulos-dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opciones-texto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;  
+}
+
+/*estilos de los calentarios*/
+.contenedor-filtros {    
+    padding:  10px;
+    border-radius: 5px;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-filtros div {
+    width: 100%;
+   
+}
+
+.contenedor-filtros input {
+    border: 1px solid #ccc;
+    padding: 10px ;
+    border-radius: 5px;
+     width: 100%;
+     box-sizing: border-box;
+    max-width: 100%;
+    font-size: 14px;
+}
+
+.container-total-ventas {
+    border: none;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 5px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #ede5fa;
+}
+
+.icono-graficas svg {
+    background-color: rgb(87, 3, 255);
+    color: white;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+}
+
+.total-ventas-interno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.text-total-ventas {
+    font-size: 17px;
+    font-weight: bold;
+    color: #666;   
+}
+
+.numero-total-ventas {
+    color: rgb(87, 3, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+}
+
+@media (min-width:767px) and (max-width: 1023px) {
+.contenedor-padre-dashboard {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;  
+}
+.header-dashborad {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    background: rgba(1, 33, 73, 0.973);
+    color: white;
+    height: 80px;
+    z-index: 100;
+    margin-bottom: 10px;
+    box-shadow:  7px  4px 12px  rgba(0,0,0,.2);
+}
+
+.container-cards {
+    display: grid;
+    grid-column:  1 / -1 ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/*estilos de container graficas*/
+.grafica-dashboard {
+    width: 100%;
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: white;
+    grid-column: 1;
+    border-radius: 5px;
+}
+
+.contenedor-titulos-dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opciones-texto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;  
+}
+
+/*estilos de los calentarios*/
+.contenedor-filtros {    
+    padding:  10px;
+    border-radius: 5px;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    align-items: center;
+    gap: 3px;
+    justify-content: center;
+
+}
+
+.contenedor-filtros input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-size: 14px;
+}
+
+.container-total-ventas {
+    border: none;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 5px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #ede5fa;
+}
+
+.icono-graficas svg {
+    background-color: rgb(87, 3, 255);
+    color: white;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+}
+
+.total-ventas-interno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.text-total-ventas {
+    font-size: 17px;
+    font-weight: bold;
+    color: #666;   
+}
+
+.numero-total-ventas {
+    color: rgb(87, 3, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contenedor-padre-dashboard section:nth-of-type(3) {
+    grid-column: 2;
+}
+
+.contenedor-padre-dashboard section:nth-of-type(4) {
+    grid-column: 1;
+}
+
+.contenedor-padre-dashboard section:nth-of-type(5) {
+    grid-column: 2;
+}
+
+}
+
+@media (min-width: 1023px) and (max-width: 1439px) {
+.contenedor-padre-dashboard {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;  
+}
+.header-dashborad {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    background: rgba(1, 33, 73, 0.973);
+    color: white;
+    height: 80px;
+    z-index: 100;
+    margin-bottom: 10px;
+    box-shadow:  7px  4px 12px  rgba(0,0,0,.2);
+}
+
+.container-cards {
+    display: grid;
+    grid-column:  1 / -1 ;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+/*estilos de container graficas*/
+.grafica-dashboard {
+    width: 100%;
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: white;
+    grid-column: 1;
+    border-radius: 5px;
+}
+
+.contenedor-titulos-dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opciones-texto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;  
+}
+
+/*estilos de los calentarios*/
+.contenedor-filtros {    
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.contenedor-filtros div {
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+     background: #f3f3f3;
+    border: 1px solid #ccc;
+    
+}
+
+.contenedor-filtros input {
+    border: none;
+    width: 80%;
+    box-sizing: border-box;
+    background: #f3f3f3;;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.container-total-ventas {
+    border: none;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 5px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #ede5fa;
+}
+
+.icono-graficas svg {
+    background-color: rgb(87, 3, 255);
+    color: white;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+}
+
+.total-ventas-interno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.text-total-ventas {
+    font-size: 17px;
+    font-weight: bold;
+    color: #666;   
+}
+
+.numero-total-ventas {
+    color: rgb(87, 3, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contenedor-padre-dashboard section:nth-of-type(3) {
+    grid-column: 2;
+}
+
+.contenedor-padre-dashboard section:nth-of-type(4) {
+    grid-column: 1;
+}
+
+.contenedor-padre-dashboard section:nth-of-type(5) {
+    grid-column: 2;
+}
+
+}
+
+@media (min-width: 1439px) {
+.contenedor-padre-dashboard {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;  
+}
+.header-dashborad {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    background: rgba(1, 33, 73, 0.973);
+    color: white;
+    height: 80px;
+    z-index: 100;
+    margin-bottom: 10px;
+    box-shadow:  7px  4px 12px  rgba(0,0,0,.2);
+}
+
+.container-cards {
+    display: grid;
+    grid-column:  1 / -1 ;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+/*estilos de container graficas*/
+.grafica-dashboard {
+    width: 100%;
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: white;
+    grid-column: 1;
+    border-radius: 5px;
+}
+
+.contenedor-titulos-dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opciones-texto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;  
+}
+
+/*estilos de los calentarios*/
+.contenedor-filtros {    
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.contenedor-filtros div {
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+     background: #f3f3f3;
+    border: 1px solid #ccc;
+    
+}
+
+.contenedor-filtros input {
+    border: none;
+    width: 80%;
+    box-sizing: border-box;
+    background: #f3f3f3;;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.container-total-ventas {
+    border: none;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 5px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #ede5fa;
+}
+
+.icono-graficas svg {
+    background-color: rgb(87, 3, 255);
+    color: white;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+}
+
+.total-ventas-interno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.text-total-ventas {
+    font-size: 17px;
+    font-weight: bold;
+    color: #666;   
+}
+
+.numero-total-ventas {
+    color: rgb(87, 3, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contenedor-padre-dashboard section:nth-of-type(3) {
+    grid-column: 2;
+}
+
+.contenedor-padre-dashboard section:nth-of-type(4) {
+    grid-column: 1;
+}
+
+.contenedor-padre-dashboard section:nth-of-type(5) {
+    grid-column: 2;
+}
+
+}
+

@@ -1,0 +1,49 @@
+
+    
+    /*estilos del formulario para crear el producto*/
+    .container-formulario-crear {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.contenedor-interno-crear {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+.contenedor-interno-crear label {
+    font-weight: bold;
+}
+
+.contenedor-interno-crear input, select {
+    padding: 12px;
+    border-radius: 5px;
+    border: 3px solid #ccc; 
+    font-size: 15px;
+}
+
+.btn-crear-producto {
+   padding: 15px;
+    border: none;
+    margin:  15px  0;
+    border-radius: 5px;
+    background-color: #157347;
+    color: white;
+    cursor: pointer;
+    font-weight: bold; 
+    font-size: 15px;  
+}
+
+.btn-crear-producto:hover {
+    background-color: #249c64;
+} 
+
+.btn-crear-producto:active {
+    background-color: #249c64;
+}

@@ -1,0 +1,181 @@
+
+/*estilos del contenedor padre*/
+.container-padre-usuarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    width: 99%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    gap: 10px;
+}
+
+/*estilos del contenedor interno */
+.container-interno-usuario {
+    border: 1px solid #ccc ;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contenido-usuarios {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.icono-usuario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    color: white;
+}
+
+.icono-usuario svg {
+    width: 35px;
+    height: 35px;
+    
+}
+.icon-rol-admin {
+    background: blue;
+}
+
+.icon-rol-mesero {
+    background:  #ff9800;;
+}
+.contenido-n-e-rol {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nombre-usuario {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.email-usuario {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.471);
+}
+
+.rol-usuario {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.471);
+    text-transform: capitalize;
+}
+
+.estado-usuario {
+    margin-left: auto;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.usuario-Activo {
+   color: #22c55e;
+    background-color: #22c55e38;
+}
+
+.usuario-Inactivo {
+     color: black;
+    background-color: rgba(0, 0, 0, 0.208);
+}
+
+.container-btn-usuarios {
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container-btn-usuarios button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.btn-editar-usuario {
+      color: rgb(87, 3, 255);
+    border: 1px solid rgb(87, 3, 255);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-editar-usuario:hover {
+    background-color: rgb(87, 3, 255);
+    color: white;
+}
+
+.boton-Inactivo {
+ color: #22c55e;
+    border: 1px solid #22c55e;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boton-Inactivo:hover {
+    background-color: #22c55e;
+    color: white;
+}
+
+.boton-Inactivo:active {
+    background-color: #22c55e6e;
+}
+
+.boton-Activo {
+    color: black;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-Activo:hover {
+    background-color: rgba(0, 0, 0, 0.696);
+    color:  white;
+}
+
+.boton-Activo:active {
+    background-color: rgba(0, 0, 0, 0.208);
+}
+
+.btn-eliminar-usuario:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-eliminar-usuario {
+    color: red;
+    border: 1px solid red;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-eliminar-usuario:hover {
+    background-color: red;
+    color: white;
+}
+
+.btn-eliminar-usuario:active {
+    background-color: rgba(255, 0, 0, 0.485);
+}
+
+
