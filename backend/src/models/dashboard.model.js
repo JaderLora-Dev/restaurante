@@ -185,7 +185,7 @@ export const obtenerResumen = async () => {
   const [[pedidosHoy]] = await connection.query(`
     SELECT COUNT(*) AS total
     FROM pedido
-    WHERE estado = Finalizado'
+    WHERE estado = 'Finalizado'
     AND DATE(fecha) = CURDATE()`);
 
   return {
