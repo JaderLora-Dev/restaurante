@@ -169,7 +169,7 @@ export const obtenerResumen = async () => {
         FROM detalle_pedido dp
         INNER JOIN pedido p
           ON dp.idPedidos = p.idPedidos
-        WHERE p.estado = "Finalizado"
+        WHERE p.estado = 'Finalizado'
           AND DATE(p.fecha) = CURDATE();
     `);
 
@@ -178,14 +178,14 @@ export const obtenerResumen = async () => {
     SELECT 
       COALESCE(SUM(total), 0) AS total
     FROM pedido
-    WHERE estado = "Finalizado"
+    WHERE estado = 'Finalizado'
       AND DATE(fecha) = CURDATE()`,
   );
 
   const [[pedidosHoy]] = await connection.query(`
     SELECT COUNT(*) AS total
     FROM pedido
-    WHERE estado = "Finalizado"
+    WHERE estado = Finalizado'
     AND DATE(fecha) = CURDATE()`);
 
   return {
